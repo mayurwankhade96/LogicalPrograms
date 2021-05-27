@@ -9,6 +9,7 @@ namespace LogicalPrograms
             Console.WriteLine("Welcome to logical programs.");
 
             const int fibonacci = 1;
+            const int perfectNum = 2;
             const int primeNumber = 3;
             const int reverseNumber = 4;
 
@@ -20,6 +21,11 @@ namespace LogicalPrograms
                 case fibonacci:
                     FibonacciSeries fibonacciSeries = new FibonacciSeries();
                     fibonacciSeries.Fibonacci();
+                    break;
+
+                case perfectNum:
+                    Perfect perfect = new Perfect();
+                    perfect.PerfectNumber();
                     break;
 
                 case primeNumber:
