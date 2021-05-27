@@ -10,6 +10,7 @@ namespace LogicalPrograms
 
             const int fibonacci = 1;
             const int primeNumber = 3;
+            const int reverseNumber = 4;
 
             Console.WriteLine("Enter a class number : ");
             int classNumber = Convert.ToInt32(Console.ReadLine());
@@ -24,6 +25,11 @@ namespace LogicalPrograms
                 case primeNumber:
                     PrimeNumber prime = new PrimeNumber();
                     prime.Prime();
+                    break;
+
+                case reverseNumber:
+                    Reverse reverse = new Reverse();
+                    reverse.ReverseNumber();
                     break;
             }
         }
