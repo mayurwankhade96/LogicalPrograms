@@ -4,38 +4,43 @@ namespace LogicalPrograms
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Welcome to logical programs.");
-
-            const int fibonacci = 1;
-            const int perfectNum = 2;
-            const int primeNumber = 3;
-            const int reverseNumber = 4;
+            Console.WriteLine("Enter a program number : ");
+            Console.WriteLine("1. Fibonacci Series");
+            Console.WriteLine("2. Perfect Number");
+            Console.WriteLine("3. Prime Number");
+            Console.WriteLine("4. Reverse a number");
 
             Console.WriteLine("Enter a class number : ");
             int classNumber = Convert.ToInt32(Console.ReadLine());
 
             switch (classNumber)
             {
-                case fibonacci:
+                case 1:
                     FibonacciSeries fibonacciSeries = new FibonacciSeries();
                     fibonacciSeries.Fibonacci();
                     break;
 
-                case perfectNum:
+                case 2:
                     Perfect perfect = new Perfect();
                     perfect.PerfectNumber();
                     break;
 
-                case primeNumber:
+                case 3:
                     PrimeNumber prime = new PrimeNumber();
                     prime.Prime();
                     break;
 
-                case reverseNumber:
+                case 4:
                     Reverse reverse = new Reverse();
                     reverse.ReverseNumber();
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid input, please select again from given options.");
+                    Program.Main();
                     break;
             }
         }
