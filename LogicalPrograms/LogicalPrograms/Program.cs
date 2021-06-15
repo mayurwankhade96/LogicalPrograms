@@ -12,8 +12,8 @@ namespace LogicalPrograms
             Console.WriteLine("2. Perfect Number");
             Console.WriteLine("3. Prime Number");
             Console.WriteLine("4. Reverse a number");
+            Console.WriteLine("5. Stopwatch");
 
-            Console.WriteLine("Enter a class number : ");
             int classNumber = Convert.ToInt32(Console.ReadLine());
 
             switch (classNumber)
@@ -36,6 +36,11 @@ namespace LogicalPrograms
                 case 4:
                     Reverse reverse = new Reverse();
                     reverse.ReverseNumber();
+                    break;
+
+                case 5:
+                    Stopwatch stopWatch = new Stopwatch();
+                    stopWatch.SWatch();
                     break;
 
                 default:
